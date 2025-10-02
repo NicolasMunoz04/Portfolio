@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/buscarReserva.css">
+  <title>Recepción - Hotel 5Bits</title>
+</head>
+<body>
+
+  <header>
+    <div>Recepción – Hotel 5bits</div>
+    <div class="profile">R</div>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="checkinout.html">Check-in / Check-out</a>
+    <a href="habitaciones.html">Habitaciones</a>
+    <a href="buscarReserva.html" class="active">Buscar Reservas</a>
+  </nav>
+
+  <main>
+    <h2>Buscar Reserva</h2>
+    <div class="search-box">
+      <input type="text" placeholder="Nombre del huésped o número de reserva">
+    </div>
+
+    <h2>Reservas</h2>
+    <table>
+      <tr>
+        <thead>
+        <th># Reserva</th>
+        <th>Huésped</th>
+        <th>Habitación</th>
+        <th>Entrada</th>
+        <th>Salida</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+      <tr>
+        <td>001</td>
+        <td>Juan Pérez</td>
+        <td>101</td>
+        <td>20/08/2025</td>
+        <td>22/08/2025</td>
+        <td><span class="status confirmed">Confirmada</span></td>
+        <td>
+          <button class="edit-btn">Editar</button>
+          <button class="cancel-btn">Cancelar</button>
+        </td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>María López</td>
+        <td>102</td>
+        <td>21/08/2025</td>
+        <td>23/08/2025</td>
+        <td><span class="status confirmed">Confirmada</span></td>
+        <td>
+          <button class="edit-btn">Editar</button>
+          <button class="cancel-btn">Cancelar</button>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+</body>
+</html>

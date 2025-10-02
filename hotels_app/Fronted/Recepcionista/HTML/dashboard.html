@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/dashboard.css">
+  <title>Dashboard - Hotel Ejemplo</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div>Recepción – Hotel 5bits</div>
+    <div class="profile">R</div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="checkinout.html">Check-in / Check-out</a>
+    <a href="habitaciones.html">Habitaciones</a>
+    <a href="buscarReserva.html">Buscar Reservas</a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <h2>Bienvenido</h2>
+    <p><strong>Juan</strong> – Recepción</p>
+
+    <h2>Resumen de Reservas</h2>
+    <div class="resumen">
+      <div>
+        <h3>14</h3>
+        <p>Total</p>
+      </div>
+      <div>
+        <h3>5</h3>
+        <p>Confirmadas</p>
+      </div>
+      <div>
+        <h3>9</h3>
+        <p>Pendientes</p>
+      </div>
+    </div>
+
+    <h2>Reservas de Hoy</h2>
+    <table>
+      <thead>
+        <tr>
+          <th># Reserva</th>
+          <th>Huésped</th>
+          <th>Habitación</th>
+          <th>Check-in</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>105</td>
+          <td>María López</td>
+          <td>202</td>
+          <td>21/08/2025</td>
+          <td><span class="status confirmed">Confirmada</span></td>
+        </tr>
+        <tr>
+          <td>106</td>
+          <td>Pedro Gómez</td>
+          <td>103</td>
+          <td>21/08/2025</td>
+          <td><span class="status pending">Pendiente</span></td>
+        </tr>
+        <tr>
+          <td>107</td>
+          <td>Ana Martín</td>
+          <td>301</td>
+          <td>21/08/2025</td>
+          <td><span class="status pending">Pendiente</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>

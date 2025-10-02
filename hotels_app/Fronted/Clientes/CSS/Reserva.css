@@ -1,0 +1,98 @@
+/* ===== Navbar (mismo estilo que index) ===== */
+
+body {
+  background: url('/IMG/Fondos/best-04.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* ===== Formulario ===== */
+.formulario {
+  max-width: 600px;
+  margin: 60px auto;
+  margin-top: 120px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  background: rgba(255,255,255,0.95); /* Blanco con transparencia */
+  backdrop-filter: blur(6px); /* Efecto vidrio */
+}
+
+.formulario h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.form-desc {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-inline {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.form-group-inline div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #1cc7da;
+  background: #fff;
+  box-shadow: 0px 0px 6px rgba(28,199,218,0.4);
+}
+
+.btn_wsp {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  background: #25d366; /* Verde WhatsApp */
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn_wsp:hover {
+  background: #1cc7da;
+  transform: scale(1.05);
+}
+
+
+

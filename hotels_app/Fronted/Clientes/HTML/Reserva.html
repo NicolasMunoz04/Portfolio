@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservación - Hotel Paraíso</title>
+  <link rel="stylesheet" href="/CSS/Reserva.css">
+  <link rel="stylesheet" href="/CSS/Servicios.css">
+</head>
+
+<body>
+  <!-- menu-horizontal -->
+  <header class="menu-horizontal">
+    <div class="logo">Hotel Paraíso</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="Servicios.html">Inicio</a></li>
+        <li><a href="Habitaciones.html">Habitaciones</a></li>
+        <li><a href="Reserva.html" class="active">Reservar</a></li>
+        <li><a href="#footer">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="reserva">
+    
+    <div class="beneficios">
+      <h2>¿Por qué reservar con nosotros?</h2>
+      <ul>
+        <li>✔ Habitaciones cómodas y modernas</li>
+        <li>✔ Desayuno buffet incluido</li>
+        <li>✔ Ubicación céntrica en Esquel</li>
+        <li>✔ Atención personalizada</li>
+      </ul>
+    </div>
+
+    <!-- formulario deconsulta-->
+    <div class="formulario">
+       <h1>Haz tú Consulta</h1>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ej. Juan" required>
+      </div>
+
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" placeholder="Ej. Pérez" required>
+      </div>
+
+      <div class="form-group">
+        <label for="personas">Cantidad de Personas</label>
+        <input type="number" id="personas" min="1" placeholder="Ejemplo. 2" required>
+      </div>
+
+      <div class="form-group">
+        <label for="habitacion">Tipo de Habitación</label>
+        <select id="habitacion" required>
+          <option value="">Seleccione...</option>
+          <option value="matrimonial">Habitación Matrimonial</option>
+          <option value="compartida">Habitación Compartida</option>
+          <option value="privada">Habitación Privada</option>
+          <option value="familiar">Habitación Familiar</option>
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="personas">Fecha ingreso</label>
+        <input type="date" id="fecha-ingreso" min="1" placeholder="Ejemplo. 2" required>
+      </div>
+      <div class="form-group">
+        <label for="personas">Fecha salida</label>
+        <input type="date" id="fecha-salida" min="1" placeholder="Ejemplo. 2" required>
+      </div>
+
+      <!-- Botton de redireccionamiento al contacto -->
+      <button type="submit" class="btn_wsp">Consultar</button>
+    </form>
+    </div>
+  </section>
+
+
+
+  <!-- Formulario de Reserva -->
+  <footer id="footer">
+		<h2>Universidad Nacional de la Patagonia San Juan Bosco</h2>
+		<ul class="list">
+			<li>Maxi Hermocilla</li>
+			<li>Santiago Rivera</li>
+			<li>Nicolas Muñoz</li>
+			<li>Mauro Nahuelquir</li>
+            <li>Santiago Ghisla</li>
+		</ul>
+
+	</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+
+/* ===== Sección Habitaciones ===== */
+.habitaciones {
+  max-width: 90%;
+  margin: 120px auto 60px;   /* espacio para no tapar con menú fijo */
+}
+
+.habitacion {
+  display: flex;
+  background: #1e1e1e;        /* similar al fondo oscuro de la imagen */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.habitacion:hover {
+  transform: translateY(-5px);
+}
+
+.habitacion img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.habitacion .contenido {
+  padding: 20px;
+  color: #ddd;
+  width: 60%;
+}
+
+.habitacion h2 {
+  color: #00acc1;
+  margin-bottom: 10px;
+}
+
+.habitacion p {
+  margin-bottom: 10px;
+}
+
+.habitacion ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.habitacion ul li {
+  margin: 6px 0;
+  position: relative;
+  padding-left: 18px;
+}
+
+.habitacion ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00acc1;
+}
+
+.precio {
+  font-weight: bold;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #00acc1;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #008b9a;
+}

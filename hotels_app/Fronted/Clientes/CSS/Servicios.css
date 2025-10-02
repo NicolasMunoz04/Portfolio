@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    background-color: #000000;
+}
+/* ==================================================
+   menu-horizontal
+   ================================================== */
+
+/* ===== Menu Horizontal ===== */
+.menu-horizontal {
+  position: fixed;         /* menú siempre visible */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #00acc1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-horizontal .menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-horizontal .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.menu-horizontal .menu a.active {
+  border-bottom: 2px solid #fff;
+}
+/* ==================================================
+   Layer de imagenes en movimiento
+   ================================================== */
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 600px;  /* ocupa toda la altura de la pantalla */
+  margin: 0;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* asegura que no se deforme la imagen */
+}
+
+
+
+/*Dentro del banner*/
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.banner-content h3 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.banner-content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+/* ==================================================
+        Servicios 
+   ================================================== */
+
+
+.servicios-totales {
+  max-width: 100%;
+  height: 100%;
+  margin: 60px auto;
+  padding: 30px;
+  margin-top: -35px;
+  background: #134777;
+}
+
+.servicio {
+  display: flex;
+  width: 90%;
+  margin-top: 25px;
+  background: #3a3636;        /* similar al fondo oscuro de la imagen */
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+}
+
+.servicio img {
+  width: 50%;
+  object-fit: cover;
+}
+
+
+.servicio .contenido {
+  padding: 20px;
+  color: #ddd;
+  width: 60%;
+}
+
+
+.servicio p {
+  margin-bottom: 10px;
+}
+
+.servicio ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.servicio ul li {
+  margin: 6px 0;
+  position: relative;
+  padding-left: 18px;
+}
+
+.servicio ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #036303;
+}
+
+.precio {
+  font-weight: bold;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #00acc1;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #008b9a;
+}
+
+
+/* ==================================================
+        Habitaciones 
+   ================================================== */
+.servicio, .hab {
+  background: #262829;  
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.habitaciones h2{
+    color: #fff;
+}
+
+.btn {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #0097a7;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #007c8a;
+}
+
+/* ==================================================
+   PIE DE PÁGINA
+   ================================================== */
+
+#footer {
+  background-color: rgb(34, 73, 182);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+
+#footer h2 {
+  margin-bottom: 10px;
+}
+
+#footer .list {
+  list-style: none; /* Quitamos viñetas predeterminadas */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+}
+
+#footer .list li {
+  font-size: 1em;
+  color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#footer .list li::before {
+  content: "•";
+  color: var(--color-acento);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+
+
