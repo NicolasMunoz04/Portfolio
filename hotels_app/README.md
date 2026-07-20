@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Hotels App 🏨
 
 Este proyecto es una aplicación de gestión de reservas para establecimientos turísticos.  
