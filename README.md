@@ -6,7 +6,7 @@
 ---
 
 ## 👨‍💻 Sobre mí
-- 🎓 Estudiante de Analista Programador Universitario en la UNPSJB  
+- 🎓 Analista Programador Universitario  
 - 💡 Interés en desarrollo backend con Java y Spring  
 - 🚀 Buscando crecer profesionalmente en el área de desarrollo de software  
 
