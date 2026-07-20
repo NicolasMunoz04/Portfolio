@@ -1,5 +1,5 @@
 <h1 align="center">👋 Hola, soy Nicolas Muñoz</h1>
-<h3 align="center">Estudiante de Analista Programador | Portfolio Personal</h3>
+<h3 align="center">Analista Programador | Portfolio Personal</h3>
 
 <p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
